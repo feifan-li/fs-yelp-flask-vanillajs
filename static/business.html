@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feifan Li-CSCI-571-HW6</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="section-search">
+      <div class="header">
+        <h1>Business Search</h1>
+        <h2>Fill out the form to get business near you!</h2>
+      </div>
+      <form action="/" method="GET" name="myForm">
+        <div class="form-input">
+          <div class="form-keyword">
+            <label for="keyword">Keyword<span class="star">*</span></label
+            ><br />
+            <input
+              type="text"
+              id="keyword"
+              class="input--keyword"
+              name="keyword"
+              autocomplete="off"
+              required
+            />
+            <!-- <span class="keyword-tooltiptext">
+              Please fill out this field.
+            </span> -->
+          </div>
+          <div class="form-distance">
+            <label for="distance">Distances(miles)</label><br />
+            <input
+              type="text"
+              id="distance"
+              name="distance"
+              value="10"
+              autocomplete="off"
+              class="input--distance"
+              required
+            />
+          </div>
+          <div class="form-category">
+            <label for="category">Category<span class="star">*</span></label
+            ><br />
+            <select
+              name="category"
+              class="input--category"
+              id="category"
+              required
+            >
+              <option value="default" selected>Default</option>
+              <option value="arts and entertainment">
+                Arts & Entertainment
+              </option>
+              <option value="health and medical">Health & Medical</option>
+              <option value="hotels and travel">Hotels & Travel</option>
+              <option value="food">Food</option>
+              <option value="professional services">
+                Professional Services
+              </option>
+            </select>
+          </div>
+          <div class="form-location">
+            <label>Location<span class="star">*</span></label
+            ><br />
+            <input
+              type="text"
+              name="location"
+              autocomplete="off"
+              class="input--location"
+              required
+            />
+            <span class="location-tooltiptext">
+              Please fill out this field.
+            </span>
+          </div>
+          <div class="form-checkbox">
+            <label for="checkbox"
+              >Want us to auto-detect your location? Check here</label
+            >
+            <input
+              type="checkbox"
+              id="checkbox"
+              autocomplete="off"
+              class="checkbox"
+            />
+          </div>
+        </div>
+        <div class="btns">
+          <button type="submit" class="btn btn--submit">SUBMIT</button>
+          <button type="button" class="btn btn--clear">CLEAR</button>
+        </div>
+      </form>
+    </div>
+    <p class="error-msg hidden">No record has been found</p>
+    <script defer src="/static/script.js"></script>
+  </body>
+</html>

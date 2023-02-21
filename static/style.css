@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #ddd;
+}
+h1,
+h2 {
+  color: white;
+}
+h1 {
+  padding-top: 25px;
+  margin-left: 35px;
+  font-size: 20px;
+}
+h2 {
+  margin-top: 20px;
+  margin-left: 35px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.section-search {
+  width: 600px;
+  margin-top: 10px;
+  /* padding-bottom: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 3px solid #bbb;
+}
+.header {
+  background-image: url("banner.jpeg");
+
+  height: 120px;
+  background-size: cover;
+  background-position: bottom;
+  margin-left: auto;
+  margin-right: auto;
+}
+form .form-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  margin: 15px 30px;
+  color: rgb(71, 98, 161);
+}
+.star {
+  color: red;
+}
+.form-keyword {
+  /* padding-top: 15px; */
+  grid-column: 1 / span 2;
+  position: relative;
+}
+.form-keyword:hover .keyword-tooltiptext {
+  visibility: hidden;
+}
+/* Reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_right */
+.keyword-tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border: 1.5px solid #777;
+  border-radius: 5px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  left: 25%;
+}
+/* *********************************************************************************** */
+.input--keyword {
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+  border: 1.5px solid #ccc;
+}
+/* .form-keyword:hover .keyword-tooltiptext {
+  visibility: hidden;
+} */
+.input--distance {
+  border: 1.5px solid #ccc;
+  height: 20px;
+  margin-top: 5px;
+}
+.input--category {
+  width: 100%;
+  border: 1.5px solid #ccc;
+  height: 20px;
+  margin-top: 5px;
+}
+.form-location {
+  grid-column: 1 / span 2;
+
+  height: 20px;
+  margin-top: 5px;
+  position: relative;
+}
+.form-location:hover .location-tooltiptext {
+  visibility: hidden;
+}
+/*******Reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_right********/
+.location-tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border: 1.5px solid #777;
+  border-radius: 5px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 15%;
+}
+/**********************************************************************************************************/
+.input--location {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1.5px solid #ccc;
+}
+.form-checkbox {
+  grid-column: 1 / span 2;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1.5px solid rgb(71, 98, 161);
+}
+.btns {
+  margin: 15px 30px;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  border: none;
+}
+
+.btn--submit {
+  background-color: rgb(71, 98, 161);
+  color: white;
+  box-shadow: inset 0px -5px rgb(54, 75, 125);
+}
+.btn--submit:focus {
+  border: 1px solid black;
+}
+.btn--submit:hover {
+  background-color: rgb(54, 75, 125);
+  box-shadow: inset 0px -5px rgb(47, 66, 109);
+}
+.btn--clear {
+  background-color: rgb(255, 176, 7);
+  color: white;
+  box-shadow: inset 0px -5px rgb(205, 141, 5);
+}
+.btn--clear:focus {
+  border: 1px solid black;
+}
+.btn--clear:hover {
+  background-color: rgb(205, 141, 5);
+  box-shadow: inset 0px -5px rgb(177, 123, 6);
+}
+/*  */
+.error-msg {
+  width: 900px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 350;
+  background-color: white;
+}
+.hidden {
+  display: none;
+}
+table {
+  width: 1000px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  table-layout: auto;
+}
+thead tr {
+  background-color: rgb(71, 98, 161);
+}
+tbody tr {
+  background-color: white;
+}
+th,
+td {
+  padding: 16px 24px;
+  text-align: center;
+}
+.img-cell {
+  padding: 5px 5px;
+}
+.business-name-cell span:hover {
+  color: #aaa;
+  cursor: pointer;
+}
+.th-sort-name span:hover,
+.th-sort-rating span:hover,
+.th-sort-distance span:hover {
+  cursor: pointer;
+}
+
+.section-detail {
+  width: 900px;
+  margin-top: 150px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+.status-tag {
+  display: inline;
+  margin-top: 5px;
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.detail-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  row-gap: 30px;
+}
+.detail-text-cell p {
+  font-weight: 600;
+  font-size: 18px;
+}
+.detail-text-cell:last-child {
+  font-size: 10px;
+}
+.detail-images {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 5px;
+  justify-content: center;
+}
+.detail-img {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 0;
+}
+.detail-img:hover {
+  box-shadow: 0 0 2px #555;
+}
+.detail-img img {
+  width: 100%;
+}
+.detail-img span {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 10px;
+  align-self: center;
+}
